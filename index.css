@@ -1,0 +1,152 @@
+html {
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-width: 600px;
+    max-width: 710px;
+    width: 80%;
+    border: 3px solid black;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    overflow: scroll;
+}
+.first-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    gap: 1em;
+}
+.dialogue-box {
+    background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    padding: 1em;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.dialogue-box:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-color: rgb(29, 27, 27);;
+    width: 15px;
+    height: 15px;
+    bottom: -8px;
+    left: 29px;
+    background: inherit;
+    transform: rotate(45deg);
+}
+.first-row div img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.details-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.details-box h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.details-box p {
+    margin: 0;
+    font-size: 0.8em;
+}
+.second-box {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 1em;
+}
+.second-box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.second-row {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.second-row img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin: 1em;
+    border-radius: 20px;
+}
+.secondrow-card {
+    margin: 1em;
+    padding: 1em 1em 1em 2em;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgb(24, 22, 22);
+}
+.star {
+    font-size: 1.7em;
+    margin: 0;
+    margin-top: 10px;
+}
+.second-row h3 {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.second-row h4 {
+    font-size: 1em;
+    margin: 10px 0;
+    font-weight: 400;
+    color: gray;
+}
+.third-row {
+    border: 1px solid black; 
+    margin: 1em;
+    border-radius: 10px;
+    padding: 0em 4em;
+    text-align: center;
+    
+}
+.third-row h4 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 60px
+}
+.image-div img:nth-of-type(2){
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.low-brightness {
+    display: block;
+    filter: opacity(50%);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+.image-div p {
+    font-size: 1.6em;
+}
